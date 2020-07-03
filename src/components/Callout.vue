@@ -1,6 +1,6 @@
 <template>
     <div class="row no-gutters">
-        <div class="col xs-1 center-block">
+        <div class="col center-block">
             <div class="callout">
                 <h1>Kyle Blanchard</h1>
                 <p>Product Manager @ Experian</p>
@@ -34,6 +34,9 @@ export default {
     .myshit {
         list-style-type: none;
         font-size: 0.8em;
+        align-content: center;
+        padding: 0;
+        margin: 0;
     }
 
     .myshit a {
