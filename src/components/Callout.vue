@@ -8,11 +8,11 @@
 
             <div class="align-center">
                 <ul class="myshit">
-                    <li>Read my stuff</li>
-                    <li>Check out my photos</li>
-                    <li>Examine my career</li>
-                    <li>Explore some projects</li>
-                    <li>Contact me</li>
+                    <!--<li>Read my stuff</li>
+                    <li>Check out my photos</li>-->
+                    <li><a href="https://www.linkedin.com/in/kyle-blanchard/" target="_blank">Examine my career</a></li>
+                    <li><a href="https://github.com/k2-ant" target="_blank">Explore some projects</a></li>
+                    <li><a href="mailto:blanchardk@gmail.com">Contact me</a></li>
                 </ul>
             </div>
         </div>
@@ -36,9 +36,13 @@ export default {
         font-size: 0.8em;
     }
 
-    .myshit li:hover {
+    .myshit a {
+        color: #32323e
+    }
+
+    .myshit a:hover {
         color: #000000;
-        cursor: pointer;
+        text-decoration: none;
     }
 
 </style>
