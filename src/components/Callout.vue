@@ -13,8 +13,8 @@
             <div class="row p-1">
                 <div class="col">
                         <div class="callout">
-                        <h1>Kyle Blanchard</h1>
-                        <p>Product Manager @ Experian</p>
+                        <h1 class="m-0">Kyle Blanchard</h1>
+                        <p class="job-title">Product Manager @ <img class="work-logo pl-2" src="/img/experian-logo.png" /></p>
                     </div>
             </div></div>
 
@@ -47,6 +47,7 @@ export default {
         font-weight: 900;
     }
 
+
     .portrait {
         position:relative;
         width: 200px;
@@ -69,6 +70,12 @@ export default {
         margin-left: -50px;
     }
 
+    .job-title {
+        vertical-align: middle;
+        font-size: 0.8em;
+        color:darkslategray;
+    }
+
     .myshit {
         list-style-type: none;
         font-size: 0.8em;
@@ -84,6 +91,10 @@ export default {
         color: #000000;
         text-decoration: none;
         font-weight: bold;
+    }
+
+    .work-logo {
+        width: 7em;
     }
 
 </style>
