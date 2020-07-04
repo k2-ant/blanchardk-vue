@@ -2,7 +2,9 @@
     <div class="book">
         <div class="row">
             <div class="col">
-                <img :src="img" class="book-cover" />
+                <div class="cover-container">
+                    <img :src="img" class="book-cover" />
+                </div>
             </div>
         </div>
         <div class="row">
@@ -29,8 +31,17 @@ export default {
 </script>
 
 <style>
+    .book {
+        margin: 2em;
+        background: 
+            rgb(255,255,255,0.2);
+        border: 1px solid white;
+        border-radius: 2%;
+        box-shadow: 0px 0px 10px black;
+    }
+
     .book-cover {
-        height: 10em;
+        width: 100%;
     }
 
 </style>

@@ -24,11 +24,15 @@ export default {
 
 <style>
 
+body, html {
+  height: 100% !important;
+}
+
 .cta {
   border-radius: 100px;
 }
 .masthead {
-    height: 100vh;
+    height: 100%;
     min-height: 500px;
     background: 
     url('/img/background.jpg');
