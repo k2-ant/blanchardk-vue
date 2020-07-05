@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-light bg-none">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-none">
     <div class="order-0">
         <router-link class="navbar-brand" :to="{ name: 'Home'}"><img height="30" src="../../public/img/logo.jpg"></router-link>
     </div>
