@@ -2,6 +2,7 @@
 <div class="container-fluid masthead min-vh-100 ">
   <Nav />
   <Callout />
+  <Title title="Currently Reading..." />
   <Books />
 </div>
 </template>
@@ -11,13 +12,15 @@
 import Nav from '@/components/Nav.vue'
 import Callout from '@/components/Callout.vue'
 import Books from '@/components/Books.vue'
+import Title from '@/components/Title.vue'
 
 export default {
   name: 'Home',
   components: {
     Nav,
     Callout,
-    Books
+    Books,
+    Title
   }
 }
 </script>

@@ -1,22 +1,20 @@
 <template>
-    <div class="book">
+    <div class="book mb-5">
         <div class="row">
             <div class="col">
-                <div class="cover-container">
-                    <img :src="img" class="book-cover" />
-                </div>
+                <img :src="img" :alt="title" class="book-cover" />
+            </div>
+        </div>
+        <!-- <div class="row">
+            <div class="col mt-3">
+                <span class="book-title">{{ title }}</span>
             </div>
         </div>
         <div class="row">
-            <div class="col">
-                <span>{{ title }}</span>
+            <div class="col mb-3">
+                <span class="book-author">{{ author }}</span>
             </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <span>{{ author }}</span>
-            </div>
-        </div>
+        </div> -->
     </div>
 </template>
 
@@ -32,16 +30,27 @@ export default {
 
 <style>
     .book {
-        margin: 2em;
-        background: 
-            rgb(255,255,255,0.2);
-        border: 1px solid white;
         border-radius: 2%;
-        box-shadow: 0px 0px 10px black;
+        box-shadow: 0px 0px 10px rgb(0,0,0,0.5);
     }
 
     .book-cover {
         width: 100%;
+    }
+
+    .book-title {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #32323e;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .book-author {
+        font-size: 0.8em;
+        margin-top: 0;
+        padding-top: 0;
+        color: #777777
     }
 
 </style>

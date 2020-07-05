@@ -1,6 +1,6 @@
 <template>
     <div class="row justify-content-md-center pb-5 ml-5 mr-5 mt-5">
-        <div class="col-4" v-for="(book, index) in books" :key="index">
+        <div class="col-md-3 col-sm-1" v-for="(book, index) in books" :key="index">
             <Book :title="book.title" :author="book.author" :img ="book.img" />
         </div>
     </div>
@@ -27,39 +27,14 @@ export default {
                     img: "/img/a-man-of-letters.jpg"
                 },
                 {
-                    title : "A Man of Letters",
-                    author: "Thomas Sowell",
-                    img: "/img/a-man-of-letters.jpg"
+                    title : "Lord of the Rings",
+                    author: "J.R.R Tolkien",
+                    img: "/img/lord-of-the-rings.jpg"
                 },
                 {
-                    title : "A Man of Letters",
-                    author: "Thomas Sowell",
-                    img: "/img/a-man-of-letters.jpg"
-                },
-                {
-                    title : "A Man of Letters",
-                    author: "Thomas Sowell",
-                    img: "/img/a-man-of-letters.jpg"
-                },
-                {
-                    title : "A Man of Letters",
-                    author: "Thomas Sowell",
-                    img: "/img/a-man-of-letters.jpg"
-                },
-                {
-                    title : "A Man of Letters",
-                    author: "Thomas Sowell",
-                    img: "/img/a-man-of-letters.jpg"
-                },
-                {
-                    title : "A Man of Letters",
-                    author: "Thomas Sowell",
-                    img: "/img/a-man-of-letters.jpg"
-                },
-                {
-                    title : "A Man of Letters",
-                    author: "Thomas Sowell",
-                    img: "/img/a-man-of-letters.jpg"
+                    title : "Building Products for the Enterprise",
+                    author: "Blair Reeves & Benjamin gaines",
+                    img: "/img/building-products-for-an-enterprise.jpg"
                 }
             ]
         }
