@@ -1,5 +1,5 @@
 <template>
-<div class="container-fluid masthead min-vh-100 ">
+<div class="container-fluid masthead min-vh-100">
   <Nav />
   <Callout />
   <Title title="Currently Reading..." />

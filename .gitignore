@@ -3,6 +3,7 @@ node_modules
 /dist
 /firebase
 /.firebase
+/gateways
 
 # local env files
 .env.local

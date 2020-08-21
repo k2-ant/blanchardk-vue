@@ -17,9 +17,9 @@ export default {
         return {
             books: [
                 {
-                    title : "White Fragility",
-                    author: "Robin Diangelo",
-                    img: "/img/white-fragility.jpeg"
+                    title : "Naked Statistics",
+                    author: "Charles Wheelan",
+                    img: "/img/naked-statistics.jpg"
                 },
                 {
                     title : "A Man of Letters",
