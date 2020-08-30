@@ -1,8 +1,16 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-light bg-none">
+    <nav class="navbar navbar-expand-lg navbar-light bg-none" id="nav">
     <div class="order-0">
         <router-link class="navbar-brand" :to="{ name: 'Home'}"><img height="30" src="../../public/img/logo.jpg"></router-link>
     </div>
+    <ul class="navbar-nav justify-content-end ml-auto">
+        <li class="nav-item">
+            <router-link :to="{ name: 'Home' }" class="nav-link">Home</router-link>
+        </li>
+        <li class="nav-item">
+            <router-link :to="{ name: 'Blog' }" class="nav-link">Thoughts</router-link>
+        </li>
+    </ul>
   </nav>
 </template>
 
@@ -46,7 +54,9 @@ export default {
     }
 
     #nav a.router-link-exact-active {
-        color: #42b983;
+        font-weight: bold !important;
     }
+
+    
 
 </style>

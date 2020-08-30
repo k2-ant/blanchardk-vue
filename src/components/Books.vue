@@ -22,9 +22,9 @@ export default {
                     img: "/img/naked-statistics.jpg"
                 },
                 {
-                    title : "A Man of Letters",
-                    author: "Thomas Sowell",
-                    img: "/img/a-man-of-letters.jpg"
+                    title : "How Will You Measure Your Life?",
+                    author: "Clayton M. Christensen",
+                    img: "/img/how-will-you-measure-your-life.jpg"
                 },
                 {
                     title : "Lord of the Rings",
@@ -32,9 +32,9 @@ export default {
                     img: "/img/lord-of-the-rings.jpg"
                 },
                 {
-                    title : "Building Products for the Enterprise",
-                    author: "Blair Reeves & Benjamin gaines",
-                    img: "/img/building-products-for-an-enterprise.jpg"
+                    title : "Good to Great",
+                    author: "Jim Collins",
+                    img: "/img/good-to-great.jpg"
                 }
             ]
         }
