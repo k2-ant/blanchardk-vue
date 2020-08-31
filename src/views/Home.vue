@@ -2,8 +2,6 @@
 <div class="container-fluid masthead min-vh-100">
   <Nav />
   <Callout />
-  <Title title="Currently Reading..." />
-  <Books />
 </div>
 </template>
 
@@ -11,21 +9,22 @@
 // @ is an alias to /src
 import Nav from '@/components/Nav.vue'
 import Callout from '@/components/Callout.vue'
-import Books from '@/components/Books.vue'
-import Title from '@/components/Title.vue'
+
 
 export default {
   name: 'Home',
   components: {
     Nav,
     Callout,
-    Books,
-    Title
   }
 }
 </script>
 
 <style>
+
+#app {
+  height: 100%;
+}
 
 body, html {
   height: 100% !important;

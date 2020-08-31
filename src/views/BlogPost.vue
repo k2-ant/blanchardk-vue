@@ -1,7 +1,12 @@
 <template>
     <div class="container-fluid masthead min-vh-100">
         <Nav />
-        <div class="row blog-post">
+        <div class="row">
+            <div class="col">
+                <router-link :to="{name : 'Blog'}" class="float-left back">← Go Back</router-link>
+            </div>
+        </div>
+        <div class="row blog-post shadow">
             <div class="col">
                 <h1>{{ post.data.title }}</h1>
                 <h4>{{ post.data.author.first_name }} {{ post.data.author.last_name }}</h4>
@@ -60,11 +65,24 @@ export default {
 
 <style>
 
+.back {
+    margin: 1em 0em 0em 2em;
+    font-weight: bold;
+    color: darkslategray;
+    cursor: pointer;
+}
+
+.back:hover {
+    color: black;
+    text-decoration: none;
+}
+
 .blog-post {
     background: #ffffff;
-    margin: 2em 2em 0em 2em;
-    padding: 5em;
+    margin: 1em 2em 0em 2em;
+    padding: 5em 5em 5em 5em;
     border-radius: 1em;
+    box-shadow: 0px 0px 20px rgb(0,0,0,0.2);
 }
 
 .blog-post img {

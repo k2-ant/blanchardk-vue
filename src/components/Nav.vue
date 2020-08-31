@@ -8,6 +8,9 @@
             <router-link :to="{ name: 'Home' }" class="nav-link">Home</router-link>
         </li>
         <li class="nav-item">
+            <router-link :to="{ name: 'Books' }" class="nav-link">Bookshelf</router-link>
+        </li>
+        <li class="nav-item">
             <router-link :to="{ name: 'Blog' }" class="nav-link">Thoughts</router-link>
         </li>
     </ul>
