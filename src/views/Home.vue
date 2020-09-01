@@ -42,7 +42,5 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 1;
-    padding-bottom: 2em;
     }
 </style>

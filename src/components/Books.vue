@@ -7,11 +7,21 @@
 </template>
 
 <script>
+import { gr } from '@/gateways/goodreads.js'
 import Book from '@/components/Book.vue'
 
 export default {
     components:  {
         Book
+    },
+    created() {
+            gr.getUserInfo('1036582')
+            .then((result) => {
+                console.log(result)
+            })
+            .catch((error) => {
+                console.log(error)
+            })
     },
     data : function() {
         return {
