@@ -1,6 +1,7 @@
 <template>
     <div class="container-fluid masthead min-vh-100">
         <Nav />
+        <CirclePicture img="/img/my-main-photo.jpg" />
         <div class="row p-1">
             <div class="col">
                     <div class="callout">
@@ -45,12 +46,14 @@
 </template>
 <script>
 import Nav from '../components/Nav.vue'
+import CirclePicture from '../components/CirclePicture.vue'
 import { butter } from '@/gateways/buttercms'
 
 export default {
     name: 'Blog',
     components: {
-        Nav
+        Nav,
+        CirclePicture
     },
     data: function() {
         return {

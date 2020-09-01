@@ -1,15 +1,21 @@
 <template>
-    <div class="container-fluid">
+    <div class="container-fluid masthead">
         <Nav />
         <div class="row">
             <div class="col">
                 <router-link :to="{name : 'Blog'}" class="float-left back">← Go Back</router-link>
             </div>
         </div>
-        <div class="row blog-post shadow">
+        <CirclePicture v-bind:img="post.data.featured_image" />
+        <div class="row">
             <div class="col">
                 <h1>{{ post.data.title }}</h1>
                 <h4>{{ post.data.author.first_name }} {{ post.data.author.last_name }}</h4>
+            </div>
+        </div>
+        <div class="row no-gutters blog-post shadow">
+            <div class="col">
+
                 <div v-html="post.data.body"></div>
 
                 <router-link
@@ -17,14 +23,14 @@
                 :to="/blog/ + post.meta.previous_post.slug"
                 class="button"
                 >
-                {{ post.meta.previous_post.title }}
+                Previous Post
                 </router-link>
                 <router-link
                 v-if="post.meta.next_post"
                 :to="/blog/ + post.meta.next_post.slug"
                 class="button"
                 >
-                {{ post.meta.next_post.title }}
+                Next Post
                 </router-link>
             </div>
         </div>
@@ -35,11 +41,14 @@
 <script>
 import { butter } from '@/gateways/buttercms'
 import Nav from '../components/Nav.vue'
+import CirclePicture from '../components/CirclePicture.vue'
+
 
 export default {
     name: 'BlogPost',
     components: {
-        Nav
+        Nav,
+        CirclePicture
     },
     data: function() {
         return {

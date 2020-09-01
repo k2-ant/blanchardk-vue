@@ -1,6 +1,7 @@
 <template>
 <div class="container-fluid masthead min-vh-100">
     <Nav />
+    <CirclePicture img="/img/my-main-photo.jpg" />
     <div class="row p-1">
             <div class="col">
                     <div class="callout">
@@ -20,11 +21,14 @@
 <script>
 import Books from '@/components/Books.vue'
 import Nav from '@/components/Nav.vue'
+import CirclePicture from '@/components/CirclePicture.vue'
+
 
 export default {
     components: {
         Books,
-        Nav
+        Nav,
+        CirclePicture
     }
 }
 </script>
