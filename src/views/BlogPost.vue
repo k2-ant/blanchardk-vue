@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid masthead min-vh-100">
+    <div class="container-fluid">
         <Nav />
         <div class="row">
             <div class="col">
@@ -79,10 +79,12 @@ export default {
 
 .blog-post {
     background: #ffffff;
-    margin: 1em 2em 0em 2em;
+    margin: 1em 2em 2em 2em;
     padding: 5em 5em 5em 5em;
     border-radius: 1em;
+    text-align: left;
     box-shadow: 0px 0px 20px rgb(0,0,0,0.2);
+    z-index: 1;
 }
 
 .blog-post img {

@@ -34,7 +34,7 @@ body, html {
   border-radius: 100px;
 }
 .masthead {
-    height: 100%;
+    height: 100vh;
     min-height: 500px;
     background: 
     url('/img/background.jpg');
@@ -42,5 +42,7 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 1;
+    margin: 0;
     }
 </style>
