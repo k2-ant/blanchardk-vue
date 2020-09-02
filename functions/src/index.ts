@@ -1,20 +1,20 @@
-import * as functions from 'firebase-functions';
-const express = require('express');
-const app = express();
-const axios = require('axios');
+// import * as functions from 'firebase-functions';
+// const express = require('express');
+// const app = express();
+// const axios = require('axios');
 
-app.post('/getBook', async (req, res) => {
-try {
-    let response = await axios.get(req);
-    console.log(response)
-    res.send(response);
-} catch(error) {
-    console.log('Error getting book', error.message);
-    res.sendStatus(500);
-}
-});
+// app.post('/getBook', async (req, res) => {
+// try {
+//     let response = await axios.get(req);
+//     console.log(response)
+//     res.send(response);
+// } catch(error) {
+//     console.log('Error getting book', error.message);
+//     res.sendStatus(500);
+// }
+// });
 
-  exports.api = functions.https.onRequest(app);
+//   exports.api = functions.https.onRequest(app);
 // // Start writing Firebase Functions
 // // https://firebase.google.com/docs/functions/typescript
 //
