@@ -95,8 +95,8 @@ export default {
         display: inline-block;
         flex: 0 1 auto;
         list-style-type: none;
-        margin-left: 1em;
-        margin-right: 1em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
     }
 
     .nav-link {

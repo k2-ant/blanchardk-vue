@@ -33,7 +33,4 @@ body, html {
 .cta {
   border-radius: 100px;
 }
-.masthead {
-
-    }
 </style>

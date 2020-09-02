@@ -1,16 +1,17 @@
 <template>
     <div class="container-fluid masthead">
         <Nav />
-        <div class="row">
-            <div class="col">
-                <router-link :to="{name : 'Blog'}" class="float-left back">← Go Back</router-link>
-            </div>
-        </div>
+
         <CirclePicture v-bind:img="post.data.featured_image" />
         <div class="row">
             <div class="col">
                 <h1>{{ post.data.title }}</h1>
                 <h4>{{ post.data.author.first_name }} {{ post.data.author.last_name }}</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <router-link :to="{name : 'Blog'}" class="float-left back">← Go Back</router-link>
             </div>
         </div>
         <div class="row no-gutters blog-post shadow">
