@@ -1,5 +1,5 @@
 <template>
-    <div class="row p-1">
+    <div class="row p-1 mb-3">
         <div class="col">
             <div class="portrait d-inline-flex">
                 <img :src="img"/>

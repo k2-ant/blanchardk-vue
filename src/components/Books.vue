@@ -1,5 +1,5 @@
 <template>
-    <div class="row justify-content-md-center pb-5 ml-5 mr-5 mt-5">
+    <div class="row justify-content-md-center m-5">
         <div class="col-md-3 col-sm-1" v-for="(book, index) in books" :key="index">
             <Book :title="book.title" :author="book.author" :img ="book.img" />
         </div>

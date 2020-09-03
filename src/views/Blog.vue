@@ -2,19 +2,19 @@
     <div class="container-fluid masthead min-vh-100">
         <Nav />
         <CirclePicture img="/img/my-main-photo.jpg" />
-        <div class="row p-1">
+        <div class="row">
             <div class="col">
                     <div class="callout">
                     <h1 class="m-0">What I'm thinking</h1>
                     <p class="job-title">Powered by 
                         <a href="https://buttercms.com/" target="_blank">
-                            <img class="butter-logo pl-0" src="/img/butter-y.png" />
+                            <img class="butter-logo pl-0" src="/img/butter-b.png" />
                         </a>
                         </p>
                 </div>
             </div>
         </div>       
-        <div class="row m-5" v-for="(post, index) in posts" :key="posts.slug + '_' + index">
+        <div class="row m-3 mb-5" v-for="(post, index) in posts" :key="posts.slug + '_' + index">
             <div class="col-12 col-sm-8 col-md-6 col-lg-4">
                 <div class="card">
                     <img class="card-img" :src="post.featured_image">

@@ -2,7 +2,7 @@
 <div class="container-fluid masthead min-vh-100">
     <Nav />
     <CirclePicture img="/img/my-main-photo.jpg" />
-    <div class="row p-1">
+    <div class="row">
             <div class="col">
                     <div class="callout">
                     <h1 class="m-0">What I'm reading</h1>
