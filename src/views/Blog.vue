@@ -14,9 +14,9 @@
                 </div>
             </div>
         </div>       
-        <div class="row m-3 mb-5" v-for="(post, index) in posts" :key="posts.slug + '_' + index">
-            <div class="col-12 col-sm-8 col-md-6 col-lg-4">
-                <div class="card">
+        <div class="row m-3 mb-5">
+            <div class="col-sm-12 col-md-6 col-lg-4" v-for="(post, index) in posts" :key="posts.slug + '_' + index">
+                <div class="card blog-card">
                     <img class="card-img" :src="post.featured_image">
 
                     <div class="card-body">
@@ -80,5 +80,9 @@ export default {
 <style>
 .butter-logo {
     width: 10em;
+}
+
+.blog-card {
+    height: 100%;
 }
 </style>

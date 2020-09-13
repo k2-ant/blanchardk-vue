@@ -1,19 +1,19 @@
 <template>
     <div class="container-fluid masthead">
         <Nav />
-
-        <CirclePicture v-bind:img="post.data.featured_image" />
+        <div class="row">
+            <div class="col">
+                <router-link :to="{name : 'Blog'}" class="float-left back">← Go Back</router-link>
+            </div>
+        </div>
+        <!-- <img v-bind:src="post.data.featured_image" class="post-banner" /> -->
         <div class="row">
             <div class="col">
                 <h1>{{ post.data.title }}</h1>
                 <h4>{{ post.data.author.first_name }} {{ post.data.author.last_name }}</h4>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-                <router-link :to="{name : 'Blog'}" class="float-left back">← Go Back</router-link>
-            </div>
-        </div>
+
         <div class="row no-gutters blog-post shadow">
             <div class="col">
 
@@ -42,14 +42,12 @@
 <script>
 import { butter } from '@/gateways/buttercms'
 import Nav from '../components/Nav.vue'
-import CirclePicture from '../components/CirclePicture.vue'
 
 
 export default {
     name: 'BlogPost',
     components: {
-        Nav,
-        CirclePicture
+        Nav
     },
     data: function() {
         return {
@@ -75,6 +73,10 @@ export default {
 
 <style>
 
+.post-banner {
+    height: 12em;
+}
+
 .back {
     margin: 1em 0em 0em 2em;
     font-weight: bold;
@@ -92,7 +94,7 @@ export default {
     margin: 1em 2em 2em 2em;
     padding: 5em 5em 5em 5em;
     border-radius: 1em;
-    text-align: left;
+    /* text-align: left; */
     box-shadow: 0px 0px 20px rgb(0,0,0,0.2);
     z-index: 1;
 }
