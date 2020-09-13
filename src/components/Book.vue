@@ -1,11 +1,11 @@
 <template>
     <div class="book mb-5">
-        <div class="row">
+        <!-- <div class="row">
             <div class="col">
                 <img :src="img" :alt="title" class="book-cover" />
             </div>
-        </div>
-        <!-- <div class="row">
+        </div> -->
+        <div class="row">
             <div class="col mt-3">
                 <span class="book-title">{{ title }}</span>
             </div>
@@ -14,7 +14,7 @@
             <div class="col mb-3">
                 <span class="book-author">{{ author }}</span>
             </div>
-        </div> -->
+        </div>
     </div>
 </template>
 
@@ -29,13 +29,20 @@ export default {
 </script>
 
 <style>
+
     .book {
         border-radius: 2%;
         box-shadow: 0px 0px 10px rgb(0,0,0,0.5);
+        background: white;
+        padding: 1em;
     }
 
-    .book-cover {
+    /* .book-cover {
         width: 100%;
+    } */
+
+    .book-cover {
+        float: left;
     }
 
     .book-title {
