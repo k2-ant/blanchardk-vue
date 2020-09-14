@@ -1,19 +1,21 @@
 const functions = require('firebase-functions');
-// const admin = require('firebase-admin');
+// need cors to enable my endpoint to be avaialble cross-domain
 const cors = require('cors')
 const goodreads = require('goodreads-api-node');
-// Follow instructions to set up admin credentials:
-// https://firebase.google.com/docs/functions/local-emulator#set_up_admin_credentials_optional
 const express = require('express');
 const app = express();
 app.use(cors())
+
 // Set up ENV variables properly - https://firebase.google.com/docs/functions/config-env
 const myCredentials = {
     key: functions.config().goodreads.key,
     secret: functions.config().goodreads.secret
 };
+
+
 const gr = goodreads(myCredentials);
 
+// primary endpoint I use. returns recent activity. 
 app.get('/getUserInfo/:userId', async (req, res) => {
     try {
         let response = await gr.getUserInfo(req.params.userId);
@@ -25,6 +27,7 @@ app.get('/getUserInfo/:userId', async (req, res) => {
     }
 });
 
+// needed to get book image
 app.get('/getBook/:bookId', async (req, res) => {
     try {
         let response = await gr.showBook(req.params.bookId);

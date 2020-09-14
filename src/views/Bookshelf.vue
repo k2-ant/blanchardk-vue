@@ -2,18 +2,17 @@
 <div class="container-fluid masthead min-vh-100">
     <Nav />
     <CirclePicture img="/img/my-main-photo.jpg" />
-    <div class="row">
+        <div class="row">
             <div class="col">
                     <div class="callout">
-                    <h1 class="m-0">What I'm reading</h1>
-                    <!-- <p class="job-title">Powered by 
-                        <a href="https://buttercms.com/" target="_blank">
-                            <img class="butter-logo pl-0" src="/img/butter-y.png" />
+                    <h1 class="m-0">What I'm reading</h1>                    <p class="job-title">Powered by 
+                        <a href="https://www.npmjs.com/package/goodreads-api-node" target="_blank">
+                            <img class="goodreads-logo pl-0" src="/img/goodreads.png" />
                         </a>
-                        </p> -->
+                        </p>
                 </div>
             </div>
-        </div>  
+        </div>       
     <Books />
 </div>
 </template>
@@ -34,5 +33,9 @@ export default {
 </script>
 
 <style>
+
+.goodreads-logo {
+    width: 24px;
+}
 
 </style>
