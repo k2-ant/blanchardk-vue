@@ -23,7 +23,7 @@ export default {
     },
     created() {
         // change to the published URL.
-        axios.get('http://localhost:5001/blanchardk-5bac3/us-central1/api/getUserInfo/1036582')
+        axios.get('https://us-central1-blanchardk-5bac3.cloudfunctions.net/api/getUserInfo/1036582')
         .then( (response) => {
             this.books = []
             response.data.updates.update.forEach( (update) => {
@@ -54,8 +54,8 @@ export default {
         })
     },
     methods: {
-        async getBookImg(book_id) {
-            axios.get("http://localhost:5001/blanchardk-5bac3/us-central1/api/getBook/" + book_id)
+         getBookImg(book_id) {
+            axios.get("us-central1-blanchardk.5bac3.cloudfunctions.net/api/getBook/" + book_id)
             .then( (response) => {
                 let img_url = response.data.book.image_url
                 return img_url

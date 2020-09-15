@@ -4,16 +4,17 @@ const cors = require('cors')
 const goodreads = require('goodreads-api-node');
 const express = require('express');
 const app = express();
-app.use(cors())
+
 
 // Set up ENV variables properly - https://firebase.google.com/docs/functions/config-env
 const myCredentials = {
     key: functions.config().goodreads.key,
     secret: functions.config().goodreads.secret
 };
-
-
 const gr = goodreads(myCredentials);
+
+
+app.use(cors({ origin: true }))
 
 // primary endpoint I use. returns recent activity. 
 app.get('/getUserInfo/:userId', async (req, res) => {
@@ -48,6 +49,7 @@ app.get('/getUserShelves/:userId', async (req, res) => {
         res.sendStatus(500);
     }
 })
+
 exports.api = functions.https.onRequest(app);
 
 
