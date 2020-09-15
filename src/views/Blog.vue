@@ -17,8 +17,9 @@
         <div class="row pb-2">
             <div class="col-sm-12 col-md-6 col-lg-4 posts" v-for="(post, index) in posts" :key="posts.slug + '_' + index">
                 <div class="card blog-card">
-                    <img class="card-img" :src="post.featured_image">
-
+                    <router-link :to="'/blog/' + post.slug"> 
+                        <img class="card-img" :src="post.featured_image">
+                    </router-link>
                     <div class="card-body">
                         <h4 class="card-title">
                             <router-link :to="'/blog/' + post.slug"> 
@@ -89,5 +90,15 @@ export default {
 
 .blog-card {
     height: 100%;
+}
+
+.card-title a {
+    color: #777777;
+}
+
+.card-title a:hover {
+    color: #32323e;
+    font-weight: bold;
+    text-decoration: none;
 }
 </style>

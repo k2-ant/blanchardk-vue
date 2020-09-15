@@ -14,12 +14,12 @@
             </div>
         </div>
 
-        <div class="row no-gutters blog-post shadow">
-            <div class="col">
+        <div class="row p-5  justify-content-center shadow">
+            <div class="col-10 blog-post d-flex">
 
-                <div v-html="post.data.body"></div>
+                <div class="mx-auto" v-html="post.data.body"></div>
 
-                <router-link
+                <!-- <router-link
                 v-if="post.meta.previous_post"
                 :to="/blog/ + post.meta.previous_post.slug"
                 class="button"
@@ -32,8 +32,8 @@
                 class="button"
                 >
                 Next Post
-                </router-link>
-            </div>
+                </router-link>-->
+            </div> 
         </div>
         
     </div>
