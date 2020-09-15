@@ -1,6 +1,9 @@
 <template>
-    <div class="row justify-content-md-center m-5">
-        <div class="col-md-6 col-sm-1" v-for="(book, index) in books" :key="index">
+    <div class="row justify-content-md-center m-2">
+        <div class="col d-flex" v-if="loading">
+            <div class="loader mx-auto"></div>
+        </div>
+        <div v-else class="col-md-3 col-sm-12" v-for="(book, index) in books" :key="index">
             <!-- To Do - Add Book Images? -->
             <Book 
                 :title="book.title" 
@@ -23,9 +26,11 @@ export default {
     },
     created() {
         // change to the published URL.
+        this.loading = true
         axios.get('https://us-central1-blanchardk-5bac3.cloudfunctions.net/api/getUserInfo/1036582')
         .then( (response) => {
             this.books = []
+            this.loading = false
             response.data.updates.update.forEach( (update) => {
                 // only pull updates where I've updated readstatus, and updated to currently reading.
                 // this is just because my request is so specific, any variance creates errors.
@@ -68,6 +73,7 @@ export default {
     },
     data : function() {
         return {
+            loading: null,
             books: [
                 // {
                 //     title : "Naked Statistics",
@@ -96,5 +102,21 @@ export default {
 </script>
 
 <style>
+.loading-message {
+    color: white;
+    font-weight: bold;
+}
+.loader {
+  border: 12px solid #f3f3f357; /* Light grey */
+  border-top: 12px solid #32323e; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
 
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 </style>

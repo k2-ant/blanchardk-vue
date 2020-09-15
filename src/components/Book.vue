@@ -1,5 +1,4 @@
 <template>
-    <div class="book mb-5">
         <!-- <div class="row">
             <div class="col">
                 <img :src="img" :alt="title" class="book-cover" />
@@ -15,8 +14,8 @@
                 <span class="book-author">{{ author }}</span>
             </div>
         </div> -->
-        <div class="row no-gutters">
-            <div class="col-5 m-0">
+        <!-- <div class="row no-gutters">
+            <div class="col-md-5 col-sm-12 m-0">
                 <span class="book-title">
                     {{ title }}
                 </span>
@@ -24,12 +23,19 @@
                     {{ author }}
                 </span>
             </div>
-            <div class="col-7">
+            <div class="col-md-7 col-sm-12">
                 <span class="book-description" v-html="action">
                 </span>
             </div>
-        </div>
-    </div>
+        </div> -->
+                <div class="card book">
+                    <div class="card-body text-left">
+                        <h5 class="card-title text-left">{{ title }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted text-left"> {{ author }}</h6>
+                        <span class="card-text book-description text-left" v-html="action"></span>
+                    </div>
+                </div>
+ 
 </template>
 
 <script>
@@ -47,11 +53,12 @@ export default {
 <style>
 
     .book {
-        border-radius: 2%;
+        border-radius: 1em;
         box-shadow: 0px 0px 10px rgb(0,0,0,0.5);
-        background: white;
-        padding: 1em;
-        height: 100%
+        background: rgb(256,256,256,0.95);
+        padding: 0em;
+        height: 92%;
+        padding-bottom: 1em;
     }
 
     /* .book-cover {

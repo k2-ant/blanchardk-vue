@@ -21,9 +21,9 @@
                 <li class="nav-item-mobile">
                     <router-link :to="{ name: 'Home' }" class="nav-link">Home</router-link>
                 </li>
-                <!-- <li class="nav-item-mobile">
+                <li class="nav-item-mobile">
                     <router-link :to="{ name: 'Books' }" class="nav-link">Shelf</router-link>
-                </li> -->
+                </li>
                 <li class="nav-item-mobile">
                     <router-link :to="{ name: 'Blog' }" class="nav-link">Thoughts</router-link>
                 </li>
