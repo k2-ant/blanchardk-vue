@@ -1,0 +1,66 @@
+[debug] [2020-11-20T23:43:49.978Z] ----------------------------------------------------------------------
+[debug] [2020-11-20T23:43:49.981Z] Command:       /usr/local/Cellar/node/12.5.0/bin/node /usr/local/bin/firebase deploy --only hosting
+[debug] [2020-11-20T23:43:49.981Z] CLI Version:   8.10.0
+[debug] [2020-11-20T23:43:49.981Z] Platform:      darwin
+[debug] [2020-11-20T23:43:49.981Z] Node Version:  v12.5.0
+[debug] [2020-11-20T23:43:49.982Z] Time:          Fri Nov 20 2020 15:43:49 GMT-0800 (Pacific Standard Time)
+[debug] [2020-11-20T23:43:49.982Z] ----------------------------------------------------------------------
+[debug] [2020-11-20T23:43:49.982Z] 
+[debug] [2020-11-20T23:43:49.993Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-20T23:43:49.993Z] > authorizing via signed-in user
+[debug] [2020-11-20T23:43:49.993Z] [iam] checking project blanchardk-5bac3 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-11-20T23:43:49.997Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/blanchardk-5bac3:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-11-20T23:43:50.269Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 20 Nov 2020 23:43:50 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=176","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-20T23:43:50.271Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/blanchardk-5bac3  
+ 
+[debug] [2020-11-20T23:43:50.480Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 20 Nov 2020 23:43:50 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'blanchardk-5bac3'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-11-20T23:43:53.078Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/blanchardk-5bac3/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-11-20T23:43:53.798Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 20 Nov 2020 23:43:53 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[blanchardk-5bac3]: beginning deploy... 
+[info] i  hosting[blanchardk-5bac3]: found 27 files in dist 
+[debug] [2020-11-20T23:43:54.042Z] [hosting] hash cache [ZGlzdA] stored for 27 files
+[debug] [2020-11-20T23:43:54.042Z] [hosting][hash queue][FINAL] {"max":223,"min":9,"avg":26.59259259259259,"active":0,"complete":27,"success":27,"errored":0,"retried":0,"total":27,"elapsed":232}
+[debug] [2020-11-20T23:43:54.042Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/blanchardk-5bac3/versions/659f1b62627ceb56:populateFiles  
+ <request body omitted>
+[debug] [2020-11-20T23:43:54.618Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 20 Nov 2020 23:43:54 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-20T23:43:54.623Z] [hosting][populate queue][FINAL] {"max":579,"min":579,"avg":579,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":582}
+[debug] [2020-11-20T23:43:54.623Z] [hosting] uploads queued: 3
+[debug] [2020-11-20T23:43:55.492Z] [hosting][upload queue][FINAL] {"max":873,"min":758,"avg":810.3333333333334,"active":0,"complete":3,"success":3,"errored":0,"retried":0,"total":3,"elapsed":873}
+[info] ✔  hosting[blanchardk-5bac3]: file upload complete 
+[debug] [2020-11-20T23:43:55.492Z] [hosting] deploy completed after 1693ms
+[debug] [2020-11-20T23:43:55.608Z] [
+  {
+    "config": {
+      "public": "dist",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "blanchardk-5bac3"
+    },
+    "site": "blanchardk-5bac3",
+    "version": "sites/blanchardk-5bac3/versions/659f1b62627ceb56"
+  }
+]
+[info] i  hosting[blanchardk-5bac3]: finalizing version... 
+[debug] [2020-11-20T23:43:55.609Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/blanchardk-5bac3/versions/659f1b62627ceb56?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2020-11-20T23:43:56.253Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 20 Nov 2020 23:43:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-20T23:43:56.254Z] [hosting] finalized version for blanchardk-5bac3: {"name":"sites/blanchardk-5bac3/versions/659f1b62627ceb56","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2020-11-20T23:43:53.413944Z","createUser":{"email":"BlanchardK@gmail.com"},"finalizeTime":"2020-11-20T23:43:55.962938Z","finalizeUser":{"email":"BlanchardK@gmail.com"}}
+[info] ✔  hosting[blanchardk-5bac3]: version finalized 
+[info] i  hosting[blanchardk-5bac3]: releasing new version... 
+[debug] [2020-11-20T23:43:56.255Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/blanchardk-5bac3/releases?version_name=sites/blanchardk-5bac3/versions/659f1b62627ceb56  
+ {"message":null}

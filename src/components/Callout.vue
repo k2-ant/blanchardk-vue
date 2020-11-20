@@ -8,7 +8,7 @@
                 <div class="col">
                         <div class="callout">
                         <h1 class="m-0">Kyle Blanchard</h1>
-                       <p class="job-title">Product leader focused on data-driven innovation.</p>
+                       <p class="job-title">Aiming to build great products</p>
                     </div>
             </div></div>
 
@@ -18,18 +18,19 @@
                 <ul class="myshit">
                     <!--<li>Read my stuff</li>
                     <li>Check out my photos</li>-->
-                    <li><a href="https://www.linkedin.com/in/kyle-blanchard/" target="_blank">
-                        <img src="/img/linkedin.png" class="logo" />    
+                    <li><a href="https://twitter.com/KyleBlanchard_">
+                        <img src="/img/twitter.png" class="logo"  />        
                     </a></li>
                     <li><a href="https://github.com/k2-ant" target="_blank">
                         <img src="/img/github.png" class="logo"  />                        
                     </a></li>
-                    <li><a href="mailto:blanchardk@gmail.com">
+                    <li><a href="https://www.linkedin.com/in/kyle-blanchard/" target="_blank">
+                        <img src="/img/linkedin.png" class="logo" />    
+                    </a></li>
+
+                    <!-- <li><a href="mailto:blanchardk@gmail.com">
                         <img src="/img/email.png" class="logo"  />        
-                    </a></li>
-                    <li><a href="https://twitter.com/KyleBlanchard_">
-                        <img src="/img/twitter.png" class="logo"  />        
-                    </a></li>
+                    </a></li> -->
                 </ul>
             </div>
                 </div>
