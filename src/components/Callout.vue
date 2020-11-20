@@ -8,7 +8,7 @@
                 <div class="col">
                         <div class="callout">
                         <h1 class="m-0">Kyle Blanchard</h1>
-                       <p class="job-title">Product Manager passionate for learning, adventure, and growth.</p>
+                       <p class="job-title">Product leader focused on data-driven innovation.</p>
                     </div>
             </div></div>
 
@@ -26,6 +26,9 @@
                     </a></li>
                     <li><a href="mailto:blanchardk@gmail.com">
                         <img src="/img/email.png" class="logo"  />        
+                    </a></li>
+                    <li><a href="https://twitter.com/KyleBlanchard_">
+                        <img src="/img/twitter.png" class="logo"  />        
                     </a></li>
                 </ul>
             </div>
