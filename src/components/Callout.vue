@@ -8,7 +8,7 @@
                 <div class="col">
                         <div class="callout">
                         <h1 class="m-0">Kyle Blanchard</h1>
-                       <p class="job-title">Aiming to build great products</p>
+                       <p class="job-title">Listen. Learn. Innovate.</p>
                     </div>
             </div></div>
 

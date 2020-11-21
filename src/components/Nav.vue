@@ -25,7 +25,7 @@
                     <router-link :to="{ name: 'Books' }" class="nav-link">Shelf</router-link>
                 </li>
                 <li class="nav-item-mobile">
-                    <a href="https://blog.kblanchard.com" class="nav-link" target="_blank">>Blog</a>
+                    <a href="https://blog.kblanchard.com" class="nav-link" target="_blank">Blog</a>
                     <!-- <router-link :to="{ name: 'Blog' }" class="nav-link">Thoughts</router-link> -->
                 </li>
             </ul>
